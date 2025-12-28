@@ -9,5 +9,6 @@
  */
 class Circle final : public GraphicObject {
 public:
-    void draw() const override;
+    ~Circle() override = default;
+    void draw() const override {};
 };

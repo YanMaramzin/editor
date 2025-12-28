@@ -17,9 +17,9 @@ class GraphicObject;
 
 class EditorController {
 public:
-    explicit EditorController(std::shared_ptr<Document> document);
+    explicit EditorController(std::shared_ptr<Document> document) {(void)document;};
 
-    void newDocument();
+    void newDocument() {};
 
     /**
  * @brief Импортировать документ из файла.
@@ -31,19 +31,19 @@ public:
  * @brief Экспортировать документ в файл.
  * @param path Путь к файлу
  */
-    void exportDocument(const std::string &path);
+    void exportDocument(const std::string &path) {(void)path;};
 
     /**
  * @brief Создать графический объект.
  * @param object Новый графический примитив
  */
-    void createObject(std::shared_ptr<GraphicObject> obj);
+    void createObject(std::shared_ptr<GraphicObject> obj) {(void)obj;};
 
     /**
  * @brief Удалить графический объект.
  * @param object Графический примитив
  */
-    void deleteObject(std::shared_ptr<GraphicObject> obj);
+    void deleteObject(std::shared_ptr<GraphicObject> obj) {(void)obj;};
 
 private:
     std::shared_ptr<Document> m_document;

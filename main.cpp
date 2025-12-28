@@ -1,6 +1,7 @@
 #include <editorcontroller.h>
 #include <circle.h>
 #include <document.h>
+#include <rectangle.h>
 
 void onNew(EditorController &controller) {
     controller.newDocument();
