@@ -1,0 +1,5 @@
+<map id="Rectangle" name="Rectangle">
+<area shape="rect" id="Node000001" title="Графический примитив «Прямоугольник»." alt="" coords="37,139,115,204"/>
+<area shape="rect" id="Node000002" href="$classGraphicObject.html" title="Абстрактный базовый класс графического примитива." alt="" coords="5,5,147,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,104,79,138,73,138,73,104"/>
+</map>
