@@ -1,1 +1,1 @@
-# otus_template
+# editor
