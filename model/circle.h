@@ -1,5 +1,6 @@
 #pragma once
 #include "graphicobject.h"
+#include <iostream>
 
 /**
  * @brief Графический примитив «Окружность».
@@ -10,5 +11,7 @@
 class Circle final : public GraphicObject {
 public:
     ~Circle() override = default;
-    void draw() const override {};
+    void draw() const override {
+        std::cout << "Circle\n";
+    }
 };

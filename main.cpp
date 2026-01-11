@@ -2,6 +2,7 @@
 #include <circle.h>
 #include <document.h>
 #include <rectangle.h>
+#include <consoleview.h>
 
 void onNew(EditorController &controller) {
     controller.newDocument();
@@ -18,10 +19,13 @@ void onAddRectangle(EditorController &controller) {
 int main() {
     auto document = std::make_shared<Document>();
     EditorController controller(document);
+    ConsoleView view;
 
     onNew(controller);
     onAddCircle(controller);
     onAddRectangle(controller);
+
+    view.render(*document);
 
     controller.exportDocument("example.vec");
 }

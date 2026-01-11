@@ -41,7 +41,9 @@ public:
  */
     bool saveToFile(const std::string &filename);
 
-    const std::vector<std::shared_ptr<GraphicObject>> &objects() const;
+    const std::vector<std::shared_ptr<GraphicObject> > &objects() const {
+       return m_objects;
+    }
 private:
     std::vector<std::shared_ptr<GraphicObject>> m_objects;
 };

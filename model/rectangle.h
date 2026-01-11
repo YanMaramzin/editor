@@ -10,5 +10,8 @@
 class Rectangle final : public GraphicObject
 {
 public:
-    void draw() const override {};
+    void draw() const override
+    {
+        std::cout << " Rectangle\n";
+    }
 };
